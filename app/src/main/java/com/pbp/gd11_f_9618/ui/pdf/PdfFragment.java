@@ -270,8 +270,6 @@ public class PdfFragment extends Fragment {
         testIntent.setType("application/pdf");
         List list = packageManager.queryIntentActivities(testIntent,
                 PackageManager.MATCH_DEFAULT_ONLY);
-        FancyToast.makeText(getContext(),"ANJ",
-                FancyToast.LENGTH_LONG,FancyToast.WARNING,true).show();
         if (list.size() > 0) {
             Uri uri;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
@@ -291,8 +289,6 @@ public class PdfFragment extends Fragment {
             //TODO 2.6 - Sesuaikan package dengan package yang anda buat
             getContext().grantUriPermission("com.pbp.gd11_f_9618.ui.pdf", uri,
                     Intent.FLAG_GRANT_WRITE_URI_PERMISSION | Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            FancyToast.makeText(getContext(),"AYO",
-                    FancyToast.LENGTH_LONG,FancyToast.WARNING,true).show();
             startActivity(pdfIntent);
         } else {
             FancyToast.makeText(getContext(),"Unduh pembuka PDF untuk menampilkan file ini",
