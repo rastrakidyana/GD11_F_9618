@@ -289,7 +289,7 @@ public class PdfFragment extends Fragment {
             pdfIntent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
             pdfIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
             //TODO 2.6 - Sesuaikan package dengan package yang anda buat
-            getContext().grantUriPermission("com.pbp.gd11_x_yyyy.ui.pdf", uri,
+            getContext().grantUriPermission("com.pbp.gd11_f_9618.ui.pdf", uri,
                     Intent.FLAG_GRANT_WRITE_URI_PERMISSION | Intent.FLAG_GRANT_READ_URI_PERMISSION);
             FancyToast.makeText(getContext(),"AYO",
                     FancyToast.LENGTH_LONG,FancyToast.WARNING,true).show();
